@@ -5,23 +5,36 @@
     <title>Exercise Rec</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 
     <style>
         h1 {
-            color: blue;
             font-size: 48px;
         }
+
         .card {
             border-radius: 78px;
             padding: 5px;
-            width: 1083px;
-            height: 680px;
             background: #F9EED7;
             margin-top: 40px;
+            margin: auto;
         }
+        .card1 {
+            background: #5DB075;
+            border-radius: 78px;
+            margin: auto;
+        }
+
         body {
             margin: 0;
             font-size: 21px;
@@ -29,7 +42,7 @@
         }
 
         .container-fluid {
-            padding: 10px;
+            padding: 0px;
             text-decoration: none;
             font-size: 21px;
             background-color: #5DB075;
@@ -83,18 +96,71 @@
         </div>
     </nav>
 
-    <center>
-        <div class="card" , align="center">
-            <h1>Activities Recommend for aaaa</h1>
-            <a href="detail.html">
-                <img src="../static/images/yoga.png" alt="555;lm" height="180" align="left" , padding-top="120px">
-            </a>
-            <a href="detail.html">
-                <img src="../static/images/yoga.png" alt="555;lm" height="180" align="left" , padding-top="120px">
-            </a>
 
-    </center>
+    <div class="card container col d-flex flex-column justify-content-center w-75 h-50">
+        <h1 align="center" class="mt-3">Activities Recommend for aaaa</h1>
 
+        <div class="row d-flex justify-content-center mt-3">
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/standing up.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Standing</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/martial arts.png" >
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Martial arts</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/walking at a slow pace.png" >
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Walking at a slow pace</p>
+            </a>
+        </div>
+
+        <div class="row d-flex justify-content-center m-0">
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/dancing.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Dancing</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/swimming.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Swimming</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/hiking.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Hiking</p>
+            </a>
+        </div>
+
+        <div class="row d-flex justify-content-center m-0">
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/running.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Running</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/football.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Football</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/ride a bike.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Ride a bike</p>
+            </a>
+        </div>
+        <div class="row d-flex justify-content-center m-0">
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/yoga.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Yoga</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/vacuuming.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Vacuuming</p>
+            </a>
+            <a href="#" class="col d-flex flex-column justify-content-center">
+                <img class="align-self-center w-50 h-70" src="../static/images/cleaning and dusting.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-75">Cleaning and dusting</p>
+            </a>
+            
+        </div>
+
+        
 
 
     </div>
