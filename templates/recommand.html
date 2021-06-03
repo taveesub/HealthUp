@@ -29,6 +29,7 @@
             margin-top: 40px;
             margin: auto;
         }
+
         .card1 {
             background: #5DB075;
             border-radius: 78px;
@@ -41,8 +42,12 @@
             font-size: 21px;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #f9ea8f;
-            background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
-            /* background-image: url("../static/images/LogoHU.png") */
+            background: 
+            url(../static/images/fitness.png) center top no-repeat fixed,
+                        url(../static/images/stretching-exercises.png) right bottom no-repeat fixed,
+                        url(../static/images/man-exercising-legs.png) left bottom no-repeat fixed,
+                        linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+            background-size: 120px, 310px, 270px, auto;
 
         }
 
@@ -77,7 +82,6 @@
         .emptySpace {
             margin-bottom: 80px;
         }
-
     </style>
 </head>
 
@@ -85,35 +89,36 @@
 <body>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <!-- Brand -->
-        <a class="navbar-brand" href="#"><img src="../static/images/LogoHU.png" alt="logo" width="80px" height="80px"></a>
-      
+        <a class="navbar-brand" href="#"><img src="../static/images/LogoHU.png" alt="logo" width="80px"
+                height="80px"></a>
+
         <!-- Links -->
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="#">For Doctor</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Home</a>
-          </li>
-          
-      
-          <!-- Dropdown -->
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
-              Profile
-            </a>
-            <div class="dropdown-menu">
-              <a class="dropdown-item" href="#">Setting</a>
-              <a class="dropdown-item" href="#">About Us</a>
-              <a class="dropdown-item" href="#">Log Out</a>
-    
-            </div>
             <li class="nav-item">
-              <a class="nav-link" href="#">Hi New!</a>
+                <a class="nav-link" href="#">For Doctor</a>
             </li>
-          </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Home</a>
+            </li>
+
+
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                    Profile
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Setting</a>
+                    <a class="dropdown-item" href="#">About Us</a>
+                    <a class="dropdown-item" href="#">Log Out</a>
+
+                </div>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Hi New!</a>
+            </li>
+            </li>
         </ul>
-      </nav>
+    </nav>
 
     <div class="emptySpace">
         <h1></h1>
@@ -129,11 +134,11 @@
                 <p class="card1 d-flex justify-content-center col mt-3 w-75">Aerobics</p>
             </a>
             <a href="#" class="col d-flex flex-column justify-content-center">
-                <img class="align-self-center w-50 h-70" src="../static/images/swimming.png" >
+                <img class="align-self-center w-50 h-70" src="../static/images/swimming.png">
                 <p class="card1 d-flex justify-content-center col mt-3 w-75">Swimming</p>
             </a>
             <a href="#" class="col d-flex flex-column justify-content-center">
-                <img class="align-self-center w-50 h-70" src="../static/images/walking at a slow pace.png" >
+                <img class="align-self-center w-50 h-70" src="../static/images/walking at a slow pace.png">
                 <p class="card1 d-flex justify-content-center col mt-3 w-75">Walking at a slow pace</p>
             </a>
         </div>
@@ -180,15 +185,10 @@
                 <img class="align-self-center w-50 h-70" src="../static/images/cleaning and dusting.png">
                 <p class="card1 d-flex justify-content-center col mt-3 w-75">Cleaning and dusting</p>
             </a>
-            
+
         </div>
 
-        
-
-
     </div>
-
-    
 
 </body>
 
