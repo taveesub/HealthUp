@@ -76,9 +76,9 @@ WSGI_APPLICATION = 'HealthUp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'CPE231',
+        'NAME': 'HealthUp',
         'USER': 'postgres',
-        'PASSWORD': '1231',
+        'PASSWORD': '254203',
         'HOST': 'localhost',
         'PORT': '',
     }

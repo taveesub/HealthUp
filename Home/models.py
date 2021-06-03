@@ -18,6 +18,7 @@ class Person(models.Model):
 class Sport(models.Model):
     code = models.CharField(max_length=10, primary_key=True)
     name = models.CharField(max_length=100)
+    
     group0 = models.BooleanField()
     group1 = models.BooleanField()
     group2 = models.BooleanField()
