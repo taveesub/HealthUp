@@ -34,6 +34,8 @@
             margin: 0;
             font-size: 21px;
             font-family: Arial, Helvetica, sans-serif;
+            background-color: #f9ea8f;
+            background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
         }
 
         .container-fluid {
@@ -55,12 +57,13 @@
             margin: 10px;
         }
 
-        a.navbar-brand {
-            font-size: 21px;
+        a.dropdown-item {
+            font-size: 15px;
         }
 
-        a.dropdown-menu {
-            font-size: 15px;
+        nav {
+            height: 60px;
+            font-size: medium;
         }
 
         .fname {
@@ -85,34 +88,53 @@
             background-color: green;
 
         }
+
+        .emptySpace {
+            margin-bottom: 80px;
+        }
     </style>
 
 
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="container-fluid">
-            <div class="navbar-header">
-                <a class="navbar-brand" href="#">HealthUp!</a>
-            </div>
-            <ul class="nav navbar-nav navbar-right">
-                <li><a href="#">For Doctor</a></li>
-                <li><a href="#"><span class="glyphicon glyphicon-home"></span></a></li>
-                <li><a href="#">Hi New</a></li>
-                <li><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span
-                            class="glyphicon glyphicon-user"></span>
-                        <span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Setting</a></li>
-                        <li><a href="#">About Us</a></li>
-                        <li><a href="#">Log Out</a></li>
-                    </ul>
-                </li>
 
-            </ul>
-        </div>
-    </nav>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <!-- Brand -->
+        <a class="navbar-brand" href="#"><img src="../static/images/LogoHU.png" alt="logo" width="50px" height="50px"></a>
+      
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">For Doctor</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          
+      
+          <!-- Dropdown -->
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+              Profile
+            </a>
+            <div class="dropdown-menu">
+              <a class="dropdown-item" href="#">Setting</a>
+              <a class="dropdown-item" href="#">About Us</a>
+              <a class="dropdown-item" href="#">Log Out</a>
+    
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Hi New!</a>
+            </li>
+          </li>
+        </ul>
+      </nav>
+    
+    <div class="emptySpace">
+        <h1></h1>
+    </div>
+
 
     <div class="card container col d-flex flex-column justify-content-center w-50 h-50">
         <h1 align="center" class="mt-3">Add patient information</h1>
@@ -120,12 +142,12 @@
         <div class="row justify-content-around mt-3">
             <div class="col-4">
                 <label for="firstname">First name</label><br>
-                <input type="text" name="fname" placeholder="input first name" required>
+                <input type="text" name="fname" placeholder="Input your first name" required>
             </div>
 
             <div class="col-4">
                 <label for="flname">Family name</label><br>
-                <input type="text" name="flname" placeholder="input family name" required>
+                <input type="text" name="flname" placeholder="Input your family name" required>
             </div>
         </div>
 
@@ -143,11 +165,11 @@
         </div>
 
         <div class="col mt-3">
-            <label class="d-flex col mt-3 ml-4"> &nbsp; Disease</label>
+            <label class="d-flex col mt-3 ml-4"> &nbsp; Disease:</label>
         </div>
 
         <div class="row justify-content-around mt-3">
-            <label class="col-4" for="dicease"> &nbsp;&nbsp;&nbsp;&nbsp; High blood presure</label>
+            <label class="col-4" for="dicease"> &nbsp;&nbsp;&nbsp;&nbsp; High Blood Pressure</label>
             <div class="col-4">
                 <input type="radio" name="High blood presure" required> &nbsp;&nbsp; yes &nbsp;&nbsp;&nbsp;
                 <input type="radio" name="High blood presure"> &nbsp;&nbsp; no &nbsp;&nbsp;&nbsp;
@@ -180,7 +202,7 @@
 
 
         <div class="col mt-3">
-            <label class="d-flex col mt-3 ml-4"> &nbsp; Note</label>
+            <label class="d-flex col mt-3 ml-4"> &nbsp; Note:</label>
         </div>
 
         <div class="row justify-content-around mt-3">
@@ -200,7 +222,7 @@
         </div>
 
         <div class="row justify-content-around mt-3 ">
-            <label class="col-4" for="dicease"> &nbsp;&nbsp;&nbsp;&nbsp; Exercise guidance</label>
+            <label class="col-4" for="dicease"> &nbsp;&nbsp;&nbsp;&nbsp; Exercise Guidance</label>
             <div class="col-4">
                 <input type="radio" name="Exercise guidance" required> &nbsp;&nbsp; yes &nbsp;&nbsp;&nbsp;
                 <input type="radio" name="Exercise guidance"> &nbsp;&nbsp; no &nbsp;&nbsp;&nbsp;
