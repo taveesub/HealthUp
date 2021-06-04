@@ -50,30 +50,29 @@
 
   <div class="card container col d-flex flex-column justify-content-center w-75 h-50">
     <div class="HeaderName" align="center">
-      <label class="mt-3">Activities Recommend for:</label> 
-      <input type = "text" name = "fname" value =  "cefoxSR1707005602"></div>
+      <label class="mt-3">Activities Recommend for:</label> </div>
 
+      {% block content %}
+        {% for lineitem in data %}
     <div class="row">
           <!-- <div class="box">
             <input type = "text" name = "actname" value =  "Swimming">
             <img src="../static/images/swimming.png" width="75%" height="75%"></div>
             <hr class="d-sm-none"> -->
         <div href="#" class="col d-flex flex-column justify-content-center">
-                <p class="card1 d-flex justify-content-center col mt-3 w-100">Getting up to make a cup of tea</p>
-                <img class="align-self-center w-25 " src="../static/images/green-tea.png">
+                <p class="card1 d-flex justify-content-center col mt-3 w-100">{{ lineitem.name }}</p>
+                <img class="align-self-center w-25 " src="{{ lineitem.location }}">
         </div>
 
 
-      <textarea id="description" name="description" cols="50">
-        Getting up to make a cup of tea in the morning, be it black or green tea, is a reduced cancer risk. This is again due to the teas’ polyphenol or antioxidant content.
-
-A study of green tea, in particular, found that it may help keep esophageal and lung cancers at bay. Moreover, green tea has shown to have an inhibiting effect on the development of some types of tumors.
+      <textarea id="description" name="description" cols="50">{{ lineitem.description }}
 
       </textarea>
 
 
       </div>
-
+        {% endfor %}
+      {% endblock content %}
  
     </div>
 

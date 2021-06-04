@@ -16,8 +16,19 @@ def detail_clip(request):
     data = {}
     return render(request, 'detail_clip.html', data)
 
-def detail_noclip(request):
+def detail_noclip(request,pk):
     data = {}
+    pk = pk.strip('%20')
+    with connection.cursor() as cursor:
+            cursor.execute('SELECT  s.name as "sport", s.description as "description" '
+                           ' , s.location as "location" '
+                           ' FROM   sport s'
+                           ' WHERE  s.name = \'%s\'' % (pk,))
+            
+            row = dictfetchall(cursor)
+            column_name = [col[0] for col in cursor.description]
+
+    data['data'] = row
     return render(request, 'detail_noclip.html', data)
 
 def doctor(request):

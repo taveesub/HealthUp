@@ -15,7 +15,7 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-
+    
 from Home import views as home_views
 
 urlpatterns = [
@@ -23,8 +23,8 @@ urlpatterns = [
     path('Home', home_views.index, name='home'),
     path('Recommend/<str:pk>', home_views.recommend, name='recommend'),
     path('Doctor', home_views.doctor, name='doctor'),
-    path('Recommend/Detail/Clip', home_views.detail_clip, name='detail_clip'),
-    path('Recommend/Detail', home_views.detail_noclip, name='detail_noclip'),
+    path('Detail/Clip', home_views.detail_clip, name='detail_clip'),
+    path('Detail/<str:pk>', home_views.detail_noclip, name='detail_noclip'),
     path('PersonList', home_views.PersonList.as_view(), name='personList'),
 
 

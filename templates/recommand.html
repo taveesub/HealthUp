@@ -141,7 +141,7 @@
             {% for sport in lineitem %}
             <a href="#" class="col d-flex flex-column justify-content-center">
                 <img class="align-self-center w-50 h-70" src="{{ sport.location }}">
-                <p class="card1 d-flex justify-content-center col mt-3 w-75">{{ sport.sport}}</p>
+                <p onclick="location.href = '/Detail'+ '/' + $(this).html();" class="card1 d-flex justify-content-center col mt-3 w-75">{{ sport.sport}}</p>
             </a>
             {% endfor %}
         </div>
