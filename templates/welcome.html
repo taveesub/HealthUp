@@ -16,6 +16,11 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
   integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
   crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="{% static 'js/home.js' %}"></script>
+  
 </head>
 <body>
 
@@ -26,10 +31,10 @@
     <!-- Links -->
     <ul class="navbar-nav ml-auto">
       <li class="nav-item">
-        <a class="nav-link" href="#">For Doctor</a>
+        <a class="nav-link" href="Doctor">For Doctor</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="#">Home</a>
+        <a class="nav-link" href="Home">Home</a>
       </li>
       
   
@@ -55,9 +60,10 @@
 <div class="container">
   <img src="../static/images/LogoHU.png" width="350" height="350" >
   <p>Please type patient ID</p>
+  <form>
   <div class="input-group">
-    <input id="Patient_ID" type="email" class="form-control" size="100" placeholder="cefoxSR1707005602" required>
-    <div class="input-group-btn">
+    <input id="Patient_ID" name="name" class="form-control" size="100" placeholder="cefoxSR1707005602" required>
+    <div id="Search" class="input-group-btn">
       <button type="button" class="btn btn-success">Search</button>
     </div>
 
@@ -104,6 +110,11 @@ a.dropdown-item {
 nav {
   height: 60px;
   font-size: medium;
+}
+.ui-autocomplete {
+    max-height: 200px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 </style>

@@ -79,7 +79,7 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'HealthUp',
         'USER': 'postgres',
-        'PASSWORD': '254203',
+        'PASSWORD': '1231',
         'HOST': 'localhost',
         'PORT': '',
     }

@@ -21,6 +21,12 @@ from Home import views as home_views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('Home', home_views.index, name='home'),
+    path('Recommand/<str:pk>', home_views.recommand, name='recommand'),
+    path('Doctor', home_views.doctor, name='doctor'),
+    path('Recommand/Detail/Clip', home_views.detail_clip, name='detail_clip'),
+    path('Recommand/Detail', home_views.detail_noclip, name='detail_noclip'),
     path('PersonList', home_views.PersonList.as_view(), name='personList'),
+
+
 
 ]
