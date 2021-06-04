@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Website Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+    <!-- Brand -->
+    <a class="navbar-brand" href="#"><img src="../static/images/LogoHU.png" alt="logo" width="80px" height="80px"></a>
+  
+    <!-- Links -->
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="#">For Doctor</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Home</a>
+      </li>
+      
+  
+      <!-- Dropdown -->
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+          Profile
+        </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Setting</a>
+          <a class="dropdown-item" href="#">About Us</a>
+          <a class="dropdown-item" href="#">Log Out</a>
+
+        </div>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Hi New!</a>
+        </li>
+      </li>
+    </ul>
+  </nav>
+
+  <div class="emptySpace">
+    <h1></h1>
+    </div>
+
+  <div class="card container col d-flex flex-column justify-content-center w-75 h-50">
+    <div class="HeaderName" align="center">
+      <label class="mt-3">Activities Recommend for:</label> 
+      <input type = "text" name = "fname" value =  "cefoxSR1707005602"></div>
+
+    <div class="row">
+        <div class="col-sm-5">
+          <div>
+          <input type = "text" name = "actname" value =  "Aerobic">
+          <img src="../static/images/aerobics.png" width="75%" height="75%"></div>
+          <hr class="d-sm-none">
+        </div>
+
+        <div class="col-sm-5">
+          <input type = "text" name = "youtube" value =  "Watching On Youtube">
+          <iframe width="100%" height="80%" src="https://www.youtube.com/embed/Ug97uqPygGU" title="YouTube video player" frameborder="0" 
+          allow="accelerometer;s autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr class="d-sm-none"></div>
+        </div>
+
+      <textarea id="description" name="description" cols="50">
+        Benefits: This exercise increases heart and cardiovascular health, builds up strength, and tones major muscle groups.
+
+Safety: Focus on proper form with each exercise to avoid injury. Keep your heart rate at a moderate level throughout. You should be able to carry on a brief conversation during this exercise.
+
+Duration and frequency: 15 to 25 minutes, 3 to 5 times per week
+      </textarea>
+
+
+      </div>
+
+ 
+    </div>
+
+    
+
+
+</div>
+
+
+</body>
+</html>
+
+
+<style>
+
+body {
+  margin: 0;
+  font-size: 21px;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f9ea8f;
+  background-image: linear-gradient(315deg, #f9ea8f 0%, #aff1da 74%);
+
+
+}
+.row {
+    margin-left: 120px;
+    margin-top: 100px;
+
+}
+
+a {
+    color: rgb(255, 255, 255);
+    margin: 10px;
+}
+a.dropdown-item {
+    font-size: 15px;
+    padding:0;
+    width: 125.2px;
+  }
+
+nav {
+  height: 60px;
+  font-size: medium;
+}
+
+.card {
+    border-radius: 78px;
+    padding: 5px;
+    background: #F9EED7;
+    margin: auto;
+    height: max-content;
+        }
+
+.emptySpace {
+    margin-bottom: 80px;
+        }
+
+input[type=text] {
+  width: fit-content;
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  outline:none;
+
+}
+
+input[name=actname] {
+  font-size: 30px;
+}
+
+input[name=fname] {
+  color: green;
+}
+input[name=youtube] {
+  font-size: 20px;
+  color: brown;
+}
+
+.HeaderName {
+  font-size: 35px;
+   margin-left: 55px;
+        }
+
+.iframe {
+  width: fit-content;
+}
+
+textarea[name=description] {
+  margin-top: 50px;
+  background-color:rgba(0, 0, 0, 0);
+  border: none;
+  outline:none;
+  width: 100%;
+  height: 300px;
+}
+
+</style>
