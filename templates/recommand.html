@@ -144,7 +144,7 @@
         {% for lineitem in data %}
         <div class="row d-flex justify-content-center mt-3">
             {% for sport in lineitem %}
-            <a href="#" class="col d-flex flex-column justify-content-center">
+            <a href="#" class="col d-flex flex-column justify-content-center mb-3">
                 <img class="align-self-center w-50 h-70" src="{{ sport.location }}">
                 <p onclick="if($(this).html() == 'swimming'){
                     location.href = '/Detail/Clip1'
