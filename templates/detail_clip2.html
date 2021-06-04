@@ -51,13 +51,11 @@
 
   <div class="card container col d-flex flex-column justify-content-center w-75 h-50">
     <div class="HeaderName" align="center">
-      <label class="mt-3">Activities Recommend for:</label> 
-      <input type = "text" name = "fname" value =  "cefoxSR1707005602"></div>
+      <label class="mt-3">Aerobic</label> 
 
     <div class="row">
         <div class="col-sm-5">
           <div>
-          <input type = "text" name = "actname" value =  "Aerobic">
           <img src="../static/images/aerobics.png" width="75%" height="75%"></div>
           <hr class="d-sm-none">
         </div>
@@ -69,7 +67,7 @@
           <hr class="d-sm-none"></div>
         </div>
 
-      <textarea id="description" name="description" cols="50" class="ml-4 mr-4">
+      <textarea disabled id="description" name="description" cols="50" class="ml-4 mr-4">
         Benefits: This exercise increases heart and cardiovascular health, builds up strength, and tones major muscle groups.
 
 Safety: Focus on proper form with each exercise to avoid injury. Keep your heart rate at a moderate level throughout. You should be able to carry on a brief conversation during this exercise.
@@ -111,7 +109,7 @@ body {
 }
 .row {
     margin-left: 120px;
-    margin-top: 100px;
+    margin-top: 50px;
 
 }
 
@@ -178,6 +176,8 @@ textarea[name=description] {
   outline:none;
   width: 95%;
   height: 300px;
+  font-size: 20px;
+  color: black;
 }
 
 </style>
