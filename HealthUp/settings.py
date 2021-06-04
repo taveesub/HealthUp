@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'Home',
 ]
 
 MIDDLEWARE = [
@@ -76,9 +77,9 @@ WSGI_APPLICATION = 'HealthUp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'CPE231',
+        'NAME': 'HealthUp',
         'USER': 'postgres',
-        'PASSWORD': '1231',
+        'PASSWORD': '151040',
         'HOST': 'localhost',
         'PORT': '',
     }
