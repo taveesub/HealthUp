@@ -12,9 +12,13 @@ def index(request):
     data = {}
     return render(request, 'welcome.html', data)
 
-def detail_clip(request):
+def detail_clip1(request):
     data = {}
     return render(request, 'detail_clip.html', data)
+
+def detail_clip2(request):
+    data = {}
+    return render(request, 'detail_clip2.html', data)
 
 def detail_noclip(request,pk):
     data = {}
