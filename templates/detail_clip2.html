@@ -54,21 +54,26 @@
       <input type = "text" name = "fname" value =  "cefoxSR1707005602"></div>
 
     <div class="row">
-          <!-- <div class="box">
-            <input type = "text" name = "actname" value =  "Swimming">
-            <img src="../static/images/swimming.png" width="75%" height="75%"></div>
-            <hr class="d-sm-none"> -->
-        <div href="#" class="col d-flex flex-column justify-content-center">
-                <p class="card1 d-flex justify-content-center col mt-3 w-100">Getting up to make a cup of tea</p>
-                <img class="align-self-center w-25 " src="../static/images/green-tea.png">
+        <div class="col-sm-5">
+          <div>
+          <input type = "text" name = "actname" value =  "Aerobic">
+          <img src="../static/images/aerobics.png" width="75%" height="75%"></div>
+          <hr class="d-sm-none">
         </div>
 
+        <div class="col-sm-5">
+          <input type = "text" name = "youtube" value =  "Watching On Youtube">
+          <iframe width="100%" height="80%" src="https://www.youtube.com/embed/Ug97uqPygGU" title="YouTube video player" frameborder="0" 
+          allow="accelerometer;s autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <hr class="d-sm-none"></div>
+        </div>
 
       <textarea id="description" name="description" cols="50">
-        Getting up to make a cup of tea in the morning, be it black or green tea, is a reduced cancer risk. This is again due to the teas’ polyphenol or antioxidant content.
+        Benefits: This exercise increases heart and cardiovascular health, builds up strength, and tones major muscle groups.
 
-A study of green tea, in particular, found that it may help keep esophageal and lung cancers at bay. Moreover, green tea has shown to have an inhibiting effect on the development of some types of tumors.
+Safety: Focus on proper form with each exercise to avoid injury. Keep your heart rate at a moderate level throughout. You should be able to carry on a brief conversation during this exercise.
 
+Duration and frequency: 15 to 25 minutes, 3 to 5 times per week
       </textarea>
 
 
@@ -98,7 +103,11 @@ body {
 
 
 }
+.row {
+    margin-left: 120px;
+    margin-top: 100px;
 
+}
 
 a {
     color: rgb(255, 255, 255);
@@ -142,7 +151,10 @@ input[name=actname] {
 input[name=fname] {
   color: green;
 }
-
+input[name=youtube] {
+  font-size: 20px;
+  color: brown;
+}
 
 .HeaderName {
   font-size: 35px;
@@ -159,19 +171,7 @@ textarea[name=description] {
   border: none;
   outline:none;
   width: 100%;
-  height: 400px;
-  margin: 10px;
-}
-.box input{
-    width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.card1 {
-    color: black;
-    font-size: 30px;
-
+  height: 300px;
 }
 
 </style>
