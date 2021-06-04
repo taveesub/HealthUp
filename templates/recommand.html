@@ -20,7 +20,7 @@
 
     <style>
         h1 {
-            font-size: 48px;
+            font-size: 40px;
         }
 
         .card {
@@ -31,10 +31,11 @@
             margin: auto;
         }
 
-        .card1 {
+        .card2 {
             background: #5DB075;
             border-radius: 78px;
             margin: auto;
+            font-size: 15px;
 
         }
 
@@ -153,7 +154,7 @@
                 }
                 else{
                 location.href = '/Detail'+ '/' + $(this).html();}"
-                class="card1 d-flex justify-content-center col mt-3 w-75">{{ sport.sport}}</p>
+                class="card2 d-flex justify-content-center col mt-3 w-75 ">{{ sport.sport}}</p>
             </a>
             {% endfor %}
         </div>
