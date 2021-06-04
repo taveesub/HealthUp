@@ -24,7 +24,7 @@ def doctor(request):
     data = {}
     return render(request, 'doctor.html', data)
 
-def recommand(request, pk):
+def recommend(request, pk):
     data = dict()
     with connection.cursor() as cursor:
             cursor.execute('SELECT  h.person_no as "Person No", h.Hypokinesia as "Hypokinesia" '

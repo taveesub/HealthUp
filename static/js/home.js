@@ -20,7 +20,7 @@ $(document).ready( function () {
     });
     
     $('#Search').click(function () {
-            location.href = "/Recommand"+ "/" + $('#Patient_ID').val();
+            location.href = "/Recommend"+ "/" + $('#Patient_ID').val();
 
         });
 });
